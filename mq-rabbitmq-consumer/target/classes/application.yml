@@ -1,0 +1,15 @@
+
+server:
+  port: 8083
+spring:
+  application:
+    name: mq-rabbitmq-consumer
+  #rabbitmq配置
+  rabbitmq:
+    host: localhost
+    port: 5672
+    #注意：guest用户只能链接本地服务器 比如localhost  不可以连接远程服务器
+    username: guest
+    password: guest
+    #虚拟主机 一台机器可能有很多虚拟主机 这里选择默认配置 / 即可
+    virtual-host: /
